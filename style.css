@@ -22,3 +22,15 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #ddd;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
