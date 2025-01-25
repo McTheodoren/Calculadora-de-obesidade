@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Obesidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Obesidade</h1>
+    <label for="altura">Altura (m):</label>
+    <input type="text" id="altura" maxlength="4" oninput="formatarAltura(this)">
+    <label for="pesoInicial">Peso Inicial (kg):</label>
+    <input type="number" id="pesoInicial" step="0.1">
+    <label for="pesoAtual">Peso Atual (kg):</label>
+    <input type="number" id="pesoAtual" step="0.1">
+    <label for="pesoCirurgia">Peso da Cirurgia (kg):</label>
+    <input type="number" id="pesoCirurgia" step="0.1">
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="copiarResultados()">Copiar Resultados</button>
+    <div id="resultado"></div>
+    <script src="script.js"></script>
+</body>
+</html>
