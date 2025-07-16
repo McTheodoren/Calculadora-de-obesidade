@@ -36,8 +36,17 @@ function calcular() {
 }
 
 function copiarResultados() {
-    const resultados = document.getElementById('resultado').innerText;
-    navigator.clipboard.writeText(resultados).then(() => {
+    const altura = document.getElementById('altura').value;
+    const pesoInicial = document.getElementById('pesoInicial').value;
+    const pesoAtual = document.getElementById('pesoAtual').value;
+    const resultadosCalculados = document.getElementById('resultado').innerText;
+    const textoCopiar =
+        `Altura: ${altura} m\n` +
+        `Peso Inicial: ${pesoInicial} kg\n` +
+        `Peso Atual: ${pesoAtual} kg\n` +
+        resultadosCalculados;
+
+    navigator.clipboard.writeText(textoCopiar).then(() => {
         alert('Resultados copiados para a área de transferência!');
     }).catch(err => {
         console.error('Erro ao copiar para a área de transferência: ', err);
